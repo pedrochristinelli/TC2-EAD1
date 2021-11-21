@@ -1,0 +1,23 @@
+<div class="columns is-centered">
+    <ul class="has-text-centered">
+        <li class="field">
+            <label class="label">Título
+                <input class="input" [(ngModel)]="produto.title" placeholder="Título">
+            </label>
+        </li>
+        <li class="field">
+            <label class="label">Preço
+                <input class="input" [(ngModel)]="produto.price" placeholder="Preço">
+            </label>
+        </li>
+        <li class="field">
+            <label class="label">Descrição
+                <textarea class="input" [(ngModel)]="produto.description" placeholder="Descrição"></textarea>
+            </label>
+        </li>
+
+        <button class="button is-link" (click)="salvar()"> {{buttonText}} </button>
+    </ul>
+    
+</div>
+<br>

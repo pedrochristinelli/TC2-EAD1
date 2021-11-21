@@ -1,0 +1,27 @@
+<div class="is-centered">
+    <h1 class="title has-text-centered">Lista de Produtos</h1>    
+    <div class="columns is-centered">
+        <table class="table is-bordered is-centered">
+            <thead>
+                <tr>
+                    <td>Preço</td>
+                    <td>Descrição</td>
+                    <td>Título</td>
+                    <td>Opções</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of listaProdutos">
+                    <td>{{p.price}}</td>
+                    <td>{{p.description}}</td>
+                    <td>{{p.title}}</td>
+                    <td>
+                        <button class="button is-warning" [routerLink]="['editar/', p._id]" > Editar </button>
+                        <button class="button is-danger" (click)="deleteProduto(p._id)"> Deletar </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
