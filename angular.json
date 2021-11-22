@@ -123,6 +123,9 @@
               "devServerTarget": "tc2-ead1:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
