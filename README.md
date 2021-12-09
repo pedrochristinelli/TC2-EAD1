@@ -1,6 +1,7 @@
 # Tc2Ead1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+This sistem implements a CRUD with a rest api.
 
 ## Development server
 
